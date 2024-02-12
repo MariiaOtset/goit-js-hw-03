@@ -5,10 +5,10 @@
 // Усі слова slug повинні бути розділені тире.
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
+
 function slugify(title) {
-    const titleSplit = title.split(" ");
-    const slug = titleSplit.toLowerCase().join("-");
- return slug;
+    const slug = title.toLowerCase().split(' ').join('-');
+    return slug;
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
